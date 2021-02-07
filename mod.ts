@@ -121,11 +121,4 @@ const extensions = new Set([
 	"tga"
 ]);
 
-// https://jsben.ch/myvQM
-// const isImage = (filename: string) => extensions.has(filename.split('.')[filename.split('.').length - 1].toLowerCase());
-
-export const isImage = (filename: string) => {
-    const splitted_by_dot = filename.split('.');
-    const extension = splitted_by_dot[splitted_by_dot.length - 1];
-    return extensions.has(extension.toLowerCase());
-};
+const isImage = (filename: string) => extensions.has(filename.split('.')[filename.split('.').length - 1].toLowerCase());
