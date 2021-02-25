@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std@0.86.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { isImage } from "./mod.ts";
 
 Deno.test("image extensions", () => {

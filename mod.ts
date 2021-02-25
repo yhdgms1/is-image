@@ -1,4 +1,4 @@
-import * as path from "https://deno.land/std@0.86.0/path/mod.ts";
+import { extname } from "https://deno.land/std/path/mod.ts";
 
 const extensions = new Set([
   "ase",
@@ -130,8 +130,7 @@ const extensions = new Set([
  */
 export const isImage = (filename: string) =>
   extensions.has(
-    path.posix
-      .extname(filename)
+    extname(filename)
       .slice(1)
       .split("!")[0]
       .split("?")[0]
