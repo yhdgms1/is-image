@@ -7,7 +7,7 @@ This module checks the ending of the file name and if the extension is a picture
 ## Getting started
 
 ```ts
-import { isImage } from "https://deno.land/x/is_image@v0.0.4/mod.ts";
+import { isImage } from "https://deno.land/x/is_image@v0.0.5/mod.ts";
 
 isImage("image.png"); //True
 ```
@@ -15,7 +15,7 @@ isImage("image.png"); //True
 ## Results
 
 ```ts
-import { isImage } from "https://deno.land/x/is_image@v0.0.4/mod.ts";
+import { isImage } from "https://deno.land/x/is_image@v0.0.5/mod.ts";
 
 isImage("image.png"); //true
 isImage("image.jpg"); //true
