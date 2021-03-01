@@ -128,11 +128,15 @@ const extensions = new Set([
  *
  * @param {string} filename File name. For example, 'image.png'.
  */
-export const isImage = (filename: string) =>
-  extensions.has(
+function isImage(filename: string): boolean{
+  return extensions.has(
     extname(filename)
       .slice(1)
       .split("!")[0]
       .split("?")[0]
       .toLowerCase()
   );
+}
+
+export { isImage }
+export default isImage
