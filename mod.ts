@@ -1,5 +1,5 @@
 import { extname } from 'https://deno.land/std/path/mod.ts'
-import { extensions, web_extensions } from './extensions.ts'
+import { extensions, web_extensions } from './src/extensions.ts'
 
 /**
  * This function checks whether the file extension is a picture format.
