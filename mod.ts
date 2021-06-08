@@ -8,7 +8,7 @@ import { extensions, web_extensions } from './src/extensions.ts'
  */
 function isImage(filename: string): boolean {
   return extensions.has(
-    extname(filename).slice(1).split('!')[0].split('?')[0].toLowerCase()
+    extname(filename).slice(1).split('!')[0].split('?')[0].split(':')[0].split('')[0].toLowerCase()
   )
 }
 
@@ -19,7 +19,7 @@ function isImage(filename: string): boolean {
  */
 function isWebImage(filename: string): boolean {
   return web_extensions.has(
-    extname(filename).slice(1).split('!')[0].split('?')[0].toLowerCase()
+    extname(filename).slice(1).split('!')[0].split('?')[0].split(':')[0].split('')[0].toLowerCase()
   )
 }
 
